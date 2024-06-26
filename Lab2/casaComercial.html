@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Imagenes/negociar.png">
+  <title>Casa Comercial</title>
+  <link rel="stylesheet" href="styles.css">
+  <div class="container">
+    <h1>Casa Comercial - Gestión de Deudores</h1>
+  </head>
+  <body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="casaComercial.html">Casa Comercial</a></li>
+      <li><a href="controlDeEntregas.html">Control de Entregas</a></li>
+    </ul>
+  </nav>
+    <div class="buttons">
+      <button onclick="listarClientes()">Listar Clientes</button>
+      <button onclick="eliminarCliente()">Eliminar Cliente</button>
+      <button onclick="insertarCliente()">Insertar Cliente</button>
+      <button onclick="modificarCliente()">Modificar Cliente</button>
+      <button onclick="listarClienteEspecifico()">Listar Cliente Específico</button>
+      <button onclick="listarDeudasPendientes()">Listar Deudas Pendientes</button>
+      <button onclick="listarClientesSinDeudas()">Listar Clientes sin Deudas</button>
+    </div>
+    <div id="formulario" class="formulario"></div>
+    <div id="resultado" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

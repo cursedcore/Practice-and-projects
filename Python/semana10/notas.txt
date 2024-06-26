@@ -1,0 +1,20 @@
+Instalar la librería de CS50:
+    pip install cs50
+
+
+Funciones en las  listas:
+    append(elemento) -> Agrega un nuevo elemento en la lista
+    count(elemento) ->Cuenta la cantidad de veces que está un elemento en una lista
+    insert(1, elemento) ->Inserta el elemento x en la lista, en el índice i.
+    index(elemento) ->Recibe un elemento como argumento, y devuelve el índice
+    pop(int posicion del elemento) -> Devuelve el último elemento de la lista y lo borra
+    remove(elemento) -> Recibe un elemento como argumento, y borra su primera aparición en la lista
+    sort() -> Ordena los elementos de una lista
+    reverse() -> Revierte la posición de los elementos de la lista
+
+
+Forma alternativa de llamar a la función main:
+    if__name__== "__main__":
+    main()
+
+Diccionarios:

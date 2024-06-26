@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: Suele tardar la mitad de lo que tarda el método de selección
+
+sort2 uses: merge sort
+
+How do you know?: Es el más rápido ejecutándose, en cualquiera de sus casos
+
+sort3 uses: selection sort
+
+How do you know?: Tarda más que los demás en ejecutarse, ya que en el mejor de los casos tarda lo mismo que en el mejor de sus casos

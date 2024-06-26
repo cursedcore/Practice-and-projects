@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Imagenes/lista-de-verificacion.png">
+  <title>Control de Entregas</title>
+  <link rel="stylesheet" href="stylesCde.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="casaComercial.html">Casa Comercial</a></li>
+      <li><a href="controlDeEntregas.html">Control de Entregas</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Control de Entregas de Proyectos</h1>
+    <div class="buttons">
+      <button onclick="listarRegistros()">Listar Registros</button>
+      <button onclick="eliminarEntrega()">Eliminar Entrega</button>
+      <button onclick="mostrarFormularioInsertar()">Insertar Entrega</button>
+      <button onclick="mostrarFormularioModificar()">Modificar Entrega</button>
+      <button onclick="mostrarFormularioProyectoEspecifico()">Mostrar Proyecto Específico</button>
+      <button onclick="listarProyectosFueraDeFecha()">Proyectos Fuera de Fecha</button>
+    </div>
+    <div id="formulario" class="formulario"></div>
+    <div id="resultado" class="result"></div>
+  </div>
+  <script src="scriptCde.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+SELECT AVG(energy) from songs INNER JOIN artists ON songs.artist_id = artists.id where artists.name = "Drake";

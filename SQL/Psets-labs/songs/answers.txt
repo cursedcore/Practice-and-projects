@@ -1,0 +1,6 @@
+1.¿Sí songs.db contiene el top 100 de canciones de un oyente del 2018, como caracterizarías su aura?
+Es una persona a la que le gusta estar a la moda, y seguir tendencias del momento.
+
+2.Cuestionate sobre por qué la forma en que calculaste el aura podría no ser muy representativa del oyente.
+¿Qué otra manera más eficiente propondrías para calcular el aura de un usuario?
+Hacer una encuesta, analizar sus reproducciones más frecuentes y calcular las posibles variantes.

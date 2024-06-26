@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock %}
+
+{% block main%}
+
+<section class="principal">
+    <div class="container imagen">
+        <div class="imagen-centrada">
+            <img src="./static/producto.jpeg" alt="producto">
+        </div>
+    </div>
+    <p class="text-center">Excanner el nuevo reconocimiento facil para dejarte acceder a tu informacion de cs50 de
+        manera mas facil</p>
+    <p id="producto-click" class="text-center">Solo necesitas darle click al boton "INICIAR"</p>
+    <div class="botonentrenar">
+        <a href="{{ url_for('login') }}">
+            <button class="btn btn-primary" id="entrenar" >Iniciar</button>
+        </a>
+    </div>
+    </div>
+</section>
+<script src="{{ url_for('static', filename='botonEntrenar.js') }}"></script>
+{% endblock %}

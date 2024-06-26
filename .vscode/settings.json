@@ -1,0 +1,11 @@
+{
+    "gitdoc.enabled": true,
+    "files.associations": {
+        "random": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "ctype.h": "c",
+        "cs50.h": "c",
+        "stdint.h": "c"
+    }
+}

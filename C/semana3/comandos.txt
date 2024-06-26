@@ -1,0 +1,9 @@
+LISTA DE COMANDOS
+
+code - crear archivo y abrirlo
+touch - crear archivo, pero no lo abre
+mkdir - crear carpeta
+cd - cambiar de carpeta
+ls - listar
+cd .. - regresa a la carpeta anterior
+rm - borra elementos de una carpeta

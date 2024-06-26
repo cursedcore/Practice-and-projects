@@ -1,0 +1,18 @@
+body{
+    margin-left: 25px;
+    background-color: black;
+    color: green;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+.title{
+    color: red;
+}
+.imagenes{
+    margin-left: 20px;
+    height: 250px;
+    width: 200px;
+    border-radius: 5px;
+
+}

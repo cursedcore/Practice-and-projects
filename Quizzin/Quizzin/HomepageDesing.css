@@ -1,0 +1,89 @@
+/*Paleta de colores
+El azul: #035ae5
+El rojo/rosa/: #f64c7b
+El amarillo: #fdaa64
+*/
+
+body
+{
+    background-color:#035ae5;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size:  16px;
+}
+
+/*#CancionInicial{
+    display: none;
+}*/
+
+.centrarOpciones
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.MPopciones
+{
+    display: flex;
+    
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.botones
+{
+    background-color: #f64c7b; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: 2px solid #e6e6e6; /* Borde blanco con tono más bajo */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+  font-size: 16px; /* Tamaño del texto */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Elimina subrayado de enlace */
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+  margin-bottom: 10px;
+  cursor: pointer;
+    
+}
+
+.botones:hover {
+    background-color:  #fdaa64; 
+    color: #ffffff; 
+    border-color:  #fdaa64;
+  }
+
+.MainLbl
+{
+    color: white;
+    -webkit-text-stroke: 1.75px black;
+}
+
+.centrar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.container img {
+    max-width: 100%;
+    max-height: 100%;
+  }

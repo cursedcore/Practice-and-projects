@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Informacion</title>
+{% endblock %}
+
+{% block main %}
+
+<section class="principal">
+    <div class="contenedor-informacion">
+        <div class="container informacion">
+            <div class="float-start"><img class="imagen-informativa" src="./static/cs50.jpeg"
+                    alt="imagen del lugar del trabajo"></div>
+            <p>Centro de enseñanza de lógica de programación "CS50"</p>
+            <p>Este lugar se encuentre en la UNI la cual se encuentra en Nicaragua</p>
+            <p>Asociado con la universidad de Harvard</p>
+            <p>En este lugar se propuso y se contemplo dicho trabajo.</p>
+            <br>
+        </div>
+        <div class="container informacion">
+            <div class="float-end"><img class="imagen-informativa" src="./static/reconocimiento_facial.jpg"
+                    alt="imagen del lugar del trabajo"></div>
+            <p>El presente trabajo usa reconocimiento facial a base de redes neuronales</p>
+            <p>Se analiza la información y genera un resultado acerca de si el usuario está en la base de datos del
+                software</p>
+            <p>De esta manera se plantea dar acceso a registros del usuario segun su grupo</p>
+            <p>Y por ultimo dar acceso de administrador al usuario en caso de ser un staff.</p>
+            <br>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

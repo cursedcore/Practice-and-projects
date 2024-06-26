@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Vertical</title>
+  <link href="../static/inicio.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Centrar horizontalmente */
+      align-items: center; /* Centrar verticalmente */
+      min-height: 100vh; /* Establecer altura mínima de la pantalla */
+      background-color: #111937;
+    }
+    
+    .content {
+      flex: 1;
+    }
+    
+    .card {
+      margin-bottom: 20px;
+      border-bottom: 4px solid;
+    }
+    
+    /* Estilos para tarjetas de estado Pendiente */
+    .card-pendiente {
+      border-color: #494949 #494949 rgb(255, 91, 91) #494949;
+      background-color: #2D3551;
+      color: white;
+    }
+    
+    /* Estilos para tarjetas de estado Terminado */
+    .card-terminado {
+      border-color: #494949 #494949 rgb(152, 255, 152) #494949;
+      background-color: #2D3551;
+      color: white;
+    }
+    .creacion{
+      color: #00ad5c;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .vencimientos{
+      color: #f54242;
+      display: inline-block;
+    }
+    
+    .create-pset {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .create-pset a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .create-pset a:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li ><a href="/inicio">Psets</a></li>
+      <li  class="active"><a href="/realizados">Realizados</a></li>
+      <li><a href="/vencimiento">Vencimientos</a></li>
+    </ul>
+  </div>
+
+
+  <div class="content">
+    <!-- Contenido fuera de la barra de navegación -->
+    <div class="container">
+      <div class="card-deck">
+        {% for pset in psets %}
+        <div class="card {% if pset.estado %}card-terminado{% else %}card-pendiente{% endif %}">
+          <div class="card-body">
+            <div class="card-item">
+              <h3>{{ pset.titulo }}</h3>
+              <p>{{ pset.descripcion }}<p>
+              <p class="creacion">{{ pset.fecha_creacion }}</p>
+              <p class="vencimientos">{{ pset.fecha_vencimiento }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="create-pset">
+      <a href="{{ url_for('crear') }}">Crear psets</a>
+  </div>
+  </div>
+</body>
+</html>
